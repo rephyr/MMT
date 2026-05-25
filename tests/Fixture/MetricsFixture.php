@@ -12,7 +12,7 @@ class MetricsFixture extends TestFixture
 
     /**
      * Fields
-     *
+    *
      * @var array
      */
     // @codingStandardsIgnoreStart
@@ -20,6 +20,7 @@ class MetricsFixture extends TestFixture
         'id' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'project_id' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'metrictype_id' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
+        'weeklyreport_id' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'autoIncrement' => null],
         'date' => ['type' => 'date', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'value' => ['type' => 'float', 'length' => null, 'precision' => null, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => ''],
         '_indexes' => [
@@ -48,6 +49,7 @@ class MetricsFixture extends TestFixture
             'id' => 1,
             'project_id' => 1,
             'metrictype_id' => 1,
+            'weeklyreport_id' => 1,
             'date' => '2015-10-22',
             'value' => 1
         ],

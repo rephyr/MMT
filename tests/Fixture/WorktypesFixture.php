@@ -36,7 +36,7 @@ class WorktypesFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
+            'id' => 1001,
             'description' => 'Lorem ipsum dolor sit amet'
         ],
     ];

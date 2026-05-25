@@ -23,6 +23,7 @@ class MembersFixture extends TestFixture
         'project_role' => ['type' => 'integer', 'length' => 2, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'starting_date' => ['type' => 'date', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
         'ending_date' => ['type' => 'date', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'target_hours' => ['type' => 'integer', 'length' => 10, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null],
         '_indexes' => [
             'user_key' => ['type' => 'index', 'columns' => ['user_id'], 'length' => []],
             'project_key' => ['type' => 'index', 'columns' => ['project_id'], 'length' => []],
@@ -51,6 +52,15 @@ class MembersFixture extends TestFixture
             'project_id' => 1,
             'project_role' => 1,
             'starting_date' => '2015-10-22',
+            'target_hours' => 130,
+        ],
+        [
+            'id' => 2,
+            'user_id' => 2,
+            'project_id' => 1,
+            'project_role' => 1,
+            'starting_date' => '2015-10-22',
+            'target_hours' => 130,
         ],
     ];
 }
